@@ -1,0 +1,6 @@
+{
+
+    "extends": "next/core-web-vituals",
+    "rules": { "@next/next/no-img-element": "off"}
+    
+}
