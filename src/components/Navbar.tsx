@@ -2,14 +2,13 @@ import React, { useCallback, useEffect, useState } from "react";
 import { BsChevronDown as BsIcon, BsSearch, BsBell } from "react-icons/bs";
 import { IconBaseProps } from "react-icons";
 
+const BsChevronDown: React.FC<IconBaseProps> = (props) => <BsIcon {...props} />;
+
 import NavbarItem from "./NavbarItem";
 import MobileMenu from "./MobileMenu";
 import AccountMenu from "./AccountMenu";
 
-const BsChevronDown: React.FC<IconBaseProps> = (props) => <BsIcon {...props} />;
-
 const TOP_OFFSET = 66;
-
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [showBackground, setShowBackground] = useState(false);
@@ -90,7 +89,7 @@ const Navbar = () => {
             "
         >
           <p className="text-white text-sm">Browse</p>
-          <BsChevronDown
+          <span
             className={`text-white transition ${
               showMobileMenu ? "rotate-180" : "rotate-0"
             }`}
@@ -112,7 +111,7 @@ const Navbar = () => {
             <div className="w-6 h-6 lg:w-10 lg:h-10 rounded-md overflow-hidden">
               <img src="/images/default-blue.png" alt="Default Profile" />
             </div>
-            <BsChevronDown
+            <span
               className={`text-white transition ${
                 showAccountMenu ? "rotate-180" : "rotate-0"
               }`}
