@@ -26,6 +26,7 @@ const PlayButton: React.FC<PlayButtonProps> = ({ movieId }) => {
             transition
         "
     >
+      {/* @ts-ignore */}
       <BsFillPlayFill className="mr-1" size={25} /> Play
     </button>
   );

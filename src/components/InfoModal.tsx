@@ -98,6 +98,7 @@ const InfoModal: React.FC<InfoModalProps> = ({ visible, onClose }) => {
 
                 "
             >
+              {/* @ts-ignore */}
               <AiOutlineClose className="text-white" size={20} />
             </div>
 

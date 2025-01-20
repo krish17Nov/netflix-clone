@@ -1,10 +1,12 @@
-
 import React, { useCallback, useEffect, useState } from "react";
-import { BsChevronDown, BsSearch, BsBell } from "react-icons/bs";
+import { BsChevronDown as BsIcon, BsSearch, BsBell } from "react-icons/bs";
+import { IconBaseProps } from "react-icons";
 
 import NavbarItem from "./NavbarItem";
 import MobileMenu from "./MobileMenu";
 import AccountMenu from "./AccountMenu";
+
+const BsChevronDown: React.FC<IconBaseProps> = (props) => <BsIcon {...props} />;
 
 const TOP_OFFSET = 66;
 

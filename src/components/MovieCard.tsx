@@ -1,7 +1,9 @@
 import { useRouter } from "next/router";
 import React from "react";
+import { IconBaseProps } from 'react-icons';
 import { BsFillPlayFill } from "react-icons/bs";
-import { BiChevronDown } from "react-icons/bi";
+import { BiChevronDown as BiIcon } from "react-icons/bi";
+
 
 import useInfoModal from "@/hooks/useInfoModal";
 import FavouriteButton from "./FavouriteButton";
@@ -113,6 +115,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ data }) => {
                 hover:border-neutral-300
               "
             >
+              { /* @ts-ignore */}
               <BiChevronDown
                 size={30}
                 className="

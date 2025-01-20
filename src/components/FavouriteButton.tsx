@@ -58,6 +58,7 @@ const FavouriteButton: React.FC<FavouriteButtonProps> = ({ movieId }) => {
         hover:border-neutral-300
     "
     >
+      {/* @ts-ignore */}
       <Icon className="text-white" size={30} />
     </div>
   );

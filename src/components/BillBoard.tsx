@@ -79,7 +79,8 @@ const Billboard = () => {
                     transition
                 "
           >
-            <AiOutlineInfoCircle className="mr-1" />
+            {/* @ts-ignore */}
+            <AiOutlineInfoCircle className="mr-1" as="svg" />
             More Info
           </button>
         </div>
